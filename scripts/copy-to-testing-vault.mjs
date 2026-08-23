@@ -40,11 +40,13 @@ function expandHomeDir(filePath) {
 	return filePath;
 }
 
-// Default do ecossistema: o vault REAL (~/Documents/Vault, syncado por Syncthing) é o destino
-// de build:copy; o vault de testes ao lado do repo é o fallback (padrão do image-suite).
+// Default do ecossistema: o vault REAL (~/Documents/GR-VAULT) é o destino de build:copy.
+// O antigo ~/Documents/Vault foi aposentado em 23/08/2026; o vault de testes ao lado do
+// repo é o último fallback (padrão do image-suite).
 function getDefaultPluginsDirCandidates(repoRoot) {
 	const homeDir = os.homedir();
 	return [
+		path.join(homeDir, "Documents", "GR-VAULT", ".obsidian", "plugins"),
 		path.join(homeDir, "Documents", "Vault", ".obsidian", "plugins"),
 		path.resolve(repoRoot, "..", "plugin-testing-vault", ".obsidian", "plugins"),
 	];

@@ -1,0 +1,9 @@
+{
+	"id": "mobile-arrows",
+	"name": "Mobile Arrows",
+	"version": "1.0.0",
+	"minAppVersion": "1.4.0",
+	"description": "Setas direcionais na toolbar móvel: move o cursor por caractere, linha ou palavra. Ao carregar no celular, os comandos se registram sozinhos na toolbar.",
+	"author": "Gabriel",
+	"isDesktopOnly": false
+}

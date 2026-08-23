@@ -1,0 +1,27 @@
+{
+	"name": "mobile-arrows",
+	"version": "1.0.0",
+	"description": "Setas direcionais na toolbar móvel do Obsidian (cursor por caractere, linha e palavra).",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit && node esbuild.config.mjs production",
+		"build:copy": "npm run build && node scripts/copy-to-testing-vault.mjs"
+	},
+	"keywords": [
+		"obsidian",
+		"mobile",
+		"toolbar",
+		"cursor"
+	],
+	"author": "Gabriel",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^24.3.1",
+		"builtin-modules": "3.3.0",
+		"esbuild": "^0.25.9",
+		"obsidian": "latest",
+		"tslib": "2.4.0",
+		"typescript": "^5.9.2"
+	}
+}

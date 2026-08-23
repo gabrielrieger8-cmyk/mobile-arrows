@@ -1,0 +1,26 @@
+# vscode
+.vscode
+
+# Intellij
+*.iml
+.idea
+
+# npm
+node_modules
+
+# Build output
+build/
+main.js
+
+# Obsidian plugin data
+data.json
+
+# Exclude sourcemaps
+*.map
+
+# macOS
+.DS_Store
+
+# Test coverage output
+coverage/
+*.lcov
